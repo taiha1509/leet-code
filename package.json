@@ -1,0 +1,20 @@
+{
+    "name": "solving-problem",
+    "version": "0.1.0",
+    "description": "Leet code solving problem",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taiha1509"
+    },
+    "author": "Hant",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc"
+    },
+    "lint-staged": {
+        "*.{js,ts}": "npm run lint --fix"
+    },
+    "dependencies": {
+        "typescript": "^3.9.5"
+    }
+}
