@@ -13,3 +13,4 @@ jobs:
       - run: uname -r
       - run: lsb_release -a
       - run: node -v
+      - run: echo ${{ github.workflow }}
