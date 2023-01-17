@@ -1,0 +1,15 @@
+name: first-github-actions
+run-name: ${{ github.actor }} is learning github actions
+on: [push]
+jobs:
+  inspect-lodash-installation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install -g lodash
+      - run: uname -r
+      - run: lsb_release -a
+      - run: node -v
